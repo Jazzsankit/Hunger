@@ -1,0 +1,167 @@
+<!DOCTYPE html >
+<head> 
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="#"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/loginStyle.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.22.0/axios.min.js" integrity="sha512-m2ssMAtdCEYGWXQ8hXVG4Q39uKYtbfaJL5QMTbhl2kc6vYyubrKHhr6aLLXW4ITeXSywQLn1AhsAaqrJl8Acfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Care Pharmacy</title>
+</head>
+<body> 
+  <div class="showcase"> 
+    <div class="navbar">
+      <div class="option"><a href="/home">FEATURES</a></div>
+      <div class="option"><a href="/details">DETAILS</a></div>
+      <div class="option"><a href="/reviews">REVIEW</a></div>
+      <div class="plans option"><a href="/plans">PLANS</a></div>
+      <div class="sign-up option"><a href="/login">SIGN UP</a></div>
+    </div>
+    <div class="heading">
+      <h1 class="heading-1">MEALS PLAN </h1>
+      <h1 class="heading-2">FOR <span id="change-text">EVERYONE</span></h1>
+      <div class="showcase-btn">
+        <button class="btn">Book Now</button>
+        <button class="btn-fade">Show me more</button>
+      </div>
+    </div>
+  </div>
+  <div class="features">
+    <div class="heading-3">AWESOME FEATURES</div>
+    <div class="line"></div>
+    <div class="container">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-calendar-plus"></i></div>
+        <div class="feature-heading">365 DAYS/YEAR </div>
+        <div class="feature-content">
+          Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+          You can also choose to order more flexibly if that's your style.
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-truck"></i></div>
+        <div class="feature-heading">30 MINUTES OR FREE</div>
+        <div class="feature-content">
+          You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+          We work with the best chefs in each town to ensure that you're 100% happy.
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <div class="feature-heading">100% ORGANIC</div>
+        <div class="feature-content">
+          All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+          Good for your health, the environment, and it also tastes better!
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step-follow">
+    <div class="heading-3">STEPS TO FOLLOW</div>
+    <div class="line"></div>
+    <div class="container" style="background: whitesmoke;">
+      <div class="step-image"><img src="./images/instruc.webp" alt="" srcset=""/></div>
+      <div class="steps-container">
+        <div class="step-container clear-fix">
+          <div class="step-val">1</div>
+          <p class="howto-para">Choose the subscription plan that best fits your needs and sign up today.</p>
+        </div>
+        <div class="step-container clear-fix">
+          <div class="step-val">2</div>
+          <p class="howto-para">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+        </div>
+        <div class="step-container clear-fix">
+          <div class="step-val">3</div>
+          <p class="howto-para">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews showcase">
+    <div class="heading-4">REVIEWS</div>
+    <div class="line"></div>
+    <div class="container">
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="feature-heading">Ankit </div>
+        <div class="feature-content">
+          Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+          You can also choose to order more flexibly if that's your style.
+        </div>
+        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="feature-heading">Ayush</div>
+        <div class="feature-content">
+          You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+          We work with the best chefs in each town to ensure that you're 100% happy.
+        </div>
+        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="fas fa-user-circle"></i></div>
+        <div class="feature-heading">Ashu</div>
+        <div class="feature-content">
+          All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+          Good for your health, the environment, and it also tastes better!
+        </div>
+        <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-us">
+    <div class="heading-3">CONTACT US</div>
+    <div class="line"></div>
+    <div class="container">
+      <div class="video-tag">
+        <video src="./images/Avocado.mp4" autoplay="" loop=""></video>
+      </div>
+      <div class="form">
+        <div class="name form-style">Name
+          <input id="name" type="text" name=""/>
+        </div>
+        <div class="email form-style">Email
+          <input id="email-id" type="email" name=""/>
+        </div>
+        <div class="option form-style">
+          <label for="suggestion">How do know us</label>
+          <select id="suggest" name="">
+            <option value="friend">friend</option>
+            <option value="newspaper">newspaper</option>
+          </select>
+        </div>
+        <div class="drop-line form-style">Drop a line
+          <input id="drop" type="text"/>
+        </div>
+        <div class="check-box">
+          <input type="checkbox" name="" id=""/>                    I have read and agree with all the Privacy Policy and Terms Conditions
+        </div>
+        <button class="btn">Send Message</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-parent">
+      <ul class="footer-text">
+        <li class="text-value"><a href="">About us</a></li>
+        <li class="text-value"><a href="">ios App</a></li>
+        <li class="text-value"><a href="">Android App</a></li>
+      </ul>
+      <ul class="social-link">
+        <li><a href="#"><i class="fab fa-facebook icon-footer"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter-square icon-footer"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram icon-footer"></i></a></li>
+        <li><a href="#"><i class="fab fa-snapchat-square icon-footer"></i></a></li>
+      </ul>
+    </div>
+    <p class="footer-p">Copyright © 2019 EVERYONE. All rights reserved.</p>
+  </footer>
+  <script src="./script/script.js"></script>
+</body>

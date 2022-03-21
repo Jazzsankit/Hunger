@@ -1,0 +1,17 @@
+.navbar
+  .option
+    a(href='/home') FEATURES
+  .option
+    a(href='/detail') DETAILS
+  .option
+    a(href='/review') REVIEW
+  .plans.option
+    a(href='/plans') PLANS
+  if name
+    .sign-up.option
+      a(href='/profilepage') #{name}
+    .sign-up.option
+      a(href='/logout') LOG OUT
+  else
+    .sign-up.option
+      a(href='/login') SIGN UP

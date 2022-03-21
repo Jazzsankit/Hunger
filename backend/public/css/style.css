@@ -1,0 +1,458 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* showcase */
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    color: whitesmoke;
+    /* background: tomato; */
+}
+.fixed{
+    background: whitesmoke;
+    /* background-attachment: fixed; */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.fixed .option a{
+    color: peru;
+}
+.option a{
+    font-size: 22px;
+    margin: 15px;
+    cursor: pointer;
+    color: lightgray;
+    text-decoration: none;
+    display: flex;
+}
+
+.option a:hover{
+    color: peru;
+}
+
+.showcase{
+    background-image: linear-gradient(rgba(46, 44, 44, 0.3),rgba(31, 30, 30, 0.9)), url(../images/food2.jpg);
+    height: 100vh;
+    background-repeat:round;
+    background-size: 100vw; /*viewport*/
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.heading{
+    position: absolute;
+    top: 27%;
+    left: 15%;
+}
+
+.heading-1,.heading-2{
+    font-size: 350%;
+    color: whitesmoke;
+    padding: 6px;
+}
+
+#change-text{
+    font-size: 100%;
+    color: peru;
+    padding: 6px;
+}
+
+.btn{
+    height: 43px;
+    padding: 23px;
+    border-radius: 22px;
+    background: peru;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+    flex-direction: row; */
+    margin: 12px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.btn-fade{
+    height: 43px;
+    padding: 23px;
+    border-radius: 22px;
+    background: none;
+    color: peru;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+    flex-direction: row; */
+    margin: 12px;
+    border: 2px solid peru;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.btn-fade:hover{
+    transform: scale(1.2);
+    background: peru;
+    color: white;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.showcase-btn{
+    height: 50px;
+    width: 400px;
+    display: flex;
+}
+
+/* feature */
+.features{
+    height: 650px;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-3{
+    height: 20%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: gray;
+}
+.container{
+    height: 75%;
+    /* background: antiquewhite; */
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 92%;
+    margin: 10px;
+}
+.feature{
+    height: 296px;
+    width: 400px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 6px;
+    padding: 30px;
+    padding-top: 7px;
+    transition: transform 0.3s;
+}
+.feature-icon{
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    color: peru;
+}
+.feature-heading{
+    font-size: 20PX;
+    font-weight: bold;
+    color: gray;
+}
+.feature-content{
+
+}
+.line{
+    height: 2px;
+    width: 400px;
+    display: flex;
+    background: peru;
+    margin-bottom: 25px;
+}
+.feature:hover{
+    transform: scale(1.1);
+}
+
+/* Step follow */
+.step-follow{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.step-image{
+    height: 450px;
+    width: 250px;
+}
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 22px;
+}
+.steps-container{
+    height: 70%;
+    width: 50%;
+}
+.step-val{
+    
+    height: 50px;
+    width: 50px;
+    border: 3px solid peru;
+    border-radius: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.howto-para{
+    font-size: 17px;
+}
+.step-container{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+/* reviews */
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-4{
+    height: 20%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    color: white;   
+}
+.rating{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    color: coral;
+}
+/* contact-us */
+.contact-us{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(26, 25, 25);
+}
+.video-tag{
+    height: 90%;
+    width: 40%;
+    margin: 40px;
+}
+.form{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form-style{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: initial;
+    color: wheat;
+}
+.check-box{
+    width: 100%;
+    color: wheat;
+    margin-top: 20px;
+}
+#name,#email-id,#suggest{
+    height: 47%;
+}
+#drop{
+    height: 100px;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+/* footer */
+.footer-parent{
+
+}
+.footer-text{
+
+}
+.text-value{
+
+}
+.social-link{
+
+}
+.footer-p{
+
+}
+footer {
+    background-color: rgb(58, 56, 56);
+    height: 6.5rem;
+  }
+  .social-link {
+    display: flex;
+    width: 40%;
+    list-style-type: none;
+  }
+  .text-value {
+    padding-right: 6%;
+    text-decoration: none;
+  }
+  .footer-text {
+    display: flex;
+    width: 70%;
+    padding-right: 6%;
+    list-style-type: none;
+    justify-content: center;
+    
+  }
+  .footer-parent {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2%; */
+    padding: 20px;
+  }
+  .text-value a,
+  .icon-footer {
+    font-size: 120%;
+    color: white;
+  }
+  .social-link li {
+    padding-right: 10%;
+  }
+  .footer-p {
+    text-align: center;
+    margin: 5px;
+    font-size: 140%;
+  }
+  
+  /* plan  */
+
+  .signup {
+    background-color: #f4f4f4;
+  }
+  .signup-parent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .signup-child {
+    border-width: 1px;
+    border-color: rgb(134, 143, 161);
+    border-style: solid;
+    border-radius: 4%;
+    width: 29%;
+    /* margin-bottom: 4%; */
+    font-size: 120%;
+  }
+  .signup-features ul {
+    text-align: left;
+    /* font-size: 123%; */
+    line-height: 200%;
+    border-bottom: 1px solid rgb(134, 143, 161);
+    margin: 1rem;
+  }
+  
+  .signup-header {
+    padding: 3%;
+    border-bottom: 1px solid rgb(134, 143, 161);
+    line-height: 265%;
+    margin: 1rem;
+  }
+  .signup-button {
+    text-align: center;
+    position: relative;
+    /* top: 0.rem; */
+    top: 1.5rem;
+    /* left: 5rem; */
+  }
+  .pricing {
+    font-size: 300%;
+    color: #f63854;
+  }
+  /* .features { */
+  /* scale: transform(2); */
+  /* } */
+  
+  .signup-child {
+    transform: scale(0.8);
+  }
+
+  /* //profile */
+  .container-profile{
+    height: 500px;
+    width: 800px;
+    background: linen;
+    display: flex;
+    border-radius: 43px;
+}
+.photo{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-pic{
+    height: 42%;
+    width: 68%;
+    border-radius: 119px;
+}
+.profile-body{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 154px);
+    align-items: center;
+}
+.form-style2{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: initial;
+    color: black;
+}
+
+/* About Us */
+
+.aboutus {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-about{
+    font: 500 1.2rem'M PLUS Rounded 1c',sans-serif;
+    height: 75%;
+    background: antiquewhite;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 62%;
+    margin: 10px;
+}

@@ -1,0 +1,124 @@
+extends base.pug
+block header 
+    .showcase 
+        include header.pug
+        .heading
+            h1.heading-1 MEALS PLAN 
+            h1.heading-2
+                | FOR 
+                span#change-text EVERYONE
+            .showcase-btn
+                button.btn Book Now
+                button.btn-fade Show me more
+block content
+    .features
+        .heading-3 AWESOME FEATURES
+        .line
+        .container
+            .feature
+                .feature-icon
+                    i.fas.fa-calendar-plus
+                .feature-heading 365 DAYS/YEAR 
+                .feature-content
+                    | Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+                    | You can also choose to order more flexibly if that's your style.
+            .feature
+                .feature-icon
+                    i.fas.fa-truck
+                .feature-heading 30 MINUTES OR FREE
+                .feature-content
+                    | You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+                    | We work with the best chefs in each town to ensure that you're 100% happy.
+            .feature
+                .feature-icon
+                    i.fas.fa-leaf
+                .feature-heading 100% ORGANIC
+                .feature-content
+                    | All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+                    | Good for your health, the environment, and it also tastes better!
+    .step-follow
+        .heading-3 STEPS TO FOLLOW
+        .line
+        .container(style='background: whitesmoke;')
+            .step-image
+                img(src='./images/food_subs.png' alt='' srcset='')
+            .steps-container
+                .step-container.clear-fix
+                    .step-val 1
+                    p.howto-para Choose the subscription plan that best fits your needs and sign up today.
+                .step-container.clear-fix
+                    .step-val 2
+                    p.howto-para
+                        | Order your delicious meal using our mobile app or website. Or you can even call us!
+                .step-container.clear-fix
+                    .step-val 3
+                    p.howto-para Enjoy your meal after less than 20 minutes. See you the next time!
+    .reviews.showcase
+        .heading-4 REVIEWS
+        .line
+        .container
+            .feature
+                .feature-icon
+                    i.fas.fa-user-circle
+                .feature-heading Ankit 
+                .feature-content
+                    | Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage.
+                    | You can also choose to order more flexibly if that's your style.
+                .rating
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+            .feature
+                .feature-icon
+                    i.fas.fa-user-circle
+                .feature-heading Ayush
+                .feature-content
+                    | You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
+                    | We work with the best chefs in each town to ensure that you're 100% happy.
+                .rating
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+            .feature
+                .feature-icon
+                    i.fas.fa-user-circle
+                .feature-heading Ashu
+                .feature-content
+                    | All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics.
+                    | Good for your health, the environment, and it also tastes better!
+                .rating
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+                    i.fas.fa-star
+    .contact-us
+        .heading-3 CONTACT US
+        .line
+        .container
+            .video-tag
+                video(src='./images/Avocado.mp4' autoplay='' loop='')
+            .form
+                .name.form-style
+                    | Name
+                    input#name(type='text' name='')
+                .email.form-style
+                    | Email
+                    input#email-id(type='email' name='')
+                .option.form-style
+                    label(for='suggestion') How do know us
+                    select#suggest(name='')
+                        option(value='friend') friend
+                        option(value='newspaper') newspaper
+                .drop-line.form-style
+                    | Drop a line
+                    input#drop(type='text')
+                .check-box
+                    input(type='checkbox' name='' id='')
+                    |                     I have read and agree with all the Privacy Policy and Terms Conditions
+                button.btn Send Message
+            
