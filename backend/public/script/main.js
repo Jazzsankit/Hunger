@@ -68,7 +68,7 @@ loginBtn.addEventListener("click", async function (e) {
         e.preventDefault(); // prevent page refresh
         // console.log(loginEmail,loginPassword)
         if (loginEmail.value && loginPassword.value) {
-            let obj = await axios.post("http://localhost:3000/api/user/login", { email: loginEmail.value, password: loginPassword.value });
+            let obj = await axios.post("https://hunger-food-app.herokuapp.com/api/user/login", { email: loginEmail.value, password: loginPassword.value });
             console.log(obj);
             if (obj.data.data) {
                 window.location.href = '/';
@@ -95,7 +95,7 @@ signUpBtn.addEventListener("click", async function (e) {
                 "confirmPassword": confirmPassword.value,
                 "role": "user"
             }
-            let obj = await axios.post("http://localhost:3000/api/user/signup", signUpObj);
+            let obj = await axios.post("https://hunger-food-app.herokuapp.com/api/user/signup", signUpObj);
             console.log(obj);
         }
     }
