@@ -23,8 +23,8 @@ async function createPaymentSession(req,res){
             },
         ],
         mode: 'payment',
-        success_url: 'http://localhost:3000/',
-        cancel_url: 'http://localhost:3000/',
+        success_url: 'https://hunger-food-app.herokuapp.com',
+        cancel_url: 'https://hunger-food-app.herokuapp.com',
     })
     // console.log(session)
     

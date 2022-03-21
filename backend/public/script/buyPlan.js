@@ -10,7 +10,7 @@ for(let i=0;i<buyMe.length;i++){
                 window.location.href = "/login";
             }else{
                 let planId = buyMe[i].getAttribute("planId");
-                let session =  await axios.post("http://localhost:3000/api/booking/createPaymentSession" , {planId : planId });
+                let session =  await axios.post("https://hunger-food-app.herokuapp.com/api/booking/createPaymentSession" , {planId : planId });
                 let sessId = session.data.session.id;
                 let result = await stripe.redirectToCheckout({ sessionId: sessId });
                 console.log(result);
